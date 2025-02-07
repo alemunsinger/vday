@@ -3,18 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catch the Hearts 💖</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Valentine's Game 💖</title>
+    <link rel="stylesheet" href="createstyle.css">
 </head>
 <body>
-    <div id="game-container">
-        <h1>Catch the Hearts 💖</h1>
-        <div id="scoreboard">Score: <span id="score">0</span></div>
-        <div id="game-area">
-            <canvas id="gameCanvas" width="400" height="500"></canvas>
+    <div id="main-content">
+        <button id="askButton">Click me!</button>
+    </div>
+
+    <!-- First Popup -->
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <h2> EXXXXCUUUUUSEEE MEEEEE 💕</h2>
+            <p>YOU LOOK LIKE YOUUUUU LOVVVE MEEEEE</p>
+            <p>You look like you want to be my valentineeeee</p>
+            <button onclick="showSecondPopup()">No</button>
+            <button onclick="showSecondPopup()">No</button>
         </div>
     </div>
 
-    <script src="game.js"></script>
+    <!-- Second Popup -->
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <h2>Oh no! 😢</h2>
+            <p>Are you sureeeeee????</p>
+            <button onclick="showFinalPopup()">YAYAYAYYAYYA 💖</button>
+            <button onclick="showFinalPopup()">Still no</button>
+        </div>
+    </div>
+
+    <!-- Final Popup -->
+    <div id="popup3" class="popup">
+        <div class="popup-content">
+            <h2>Yay! 🎉</h2>
+            <p>Happy Valentine’s Day, BABAY! I LUUUHHHHH YYOOOUUUUUUU! ❤️</p>
+            <button onclick="startGame()">Start the Game 💖</button>
+        </div>
+    </div>
+
+    <script src="creategame.js"></script>
 </body>
 </html>
