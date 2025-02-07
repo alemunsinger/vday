@@ -1,18 +1,17 @@
 document.getElementById("askButton").addEventListener("click", showFirstPopup);
 
 function showFirstPopup() {
-    document.getElementById("main-content").style.display = "none";
-    document.getElementById("popup1").style.display = "flex";
+    document.getElementById("popup1").style.display = "block";
 }
 
 function showSecondPopup() {
     document.getElementById("popup1").style.display = "none";
-    document.getElementById("popup2").style.display = "flex";
+    document.getElementById("popup2").style.display = "block";
 }
 
 function showFinalPopup() {
     document.getElementById("popup2").style.display = "none";
-    document.getElementById("popup3").style.display = "flex";
+    document.getElementById("popup3").style.display = "block";
 }
 
 function startGame() {
@@ -21,6 +20,7 @@ function startGame() {
     startGameLogic(); // Call the game logic function to start the game
 }
 
+// Game code
 let canvas = document.getElementById('gameCanvas');
 let ctx = canvas.getContext('2d');
 
