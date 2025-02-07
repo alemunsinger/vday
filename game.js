@@ -1,3 +1,4 @@
+// Pop-up control functions
 document.getElementById("askButton").addEventListener("click", showFirstPopup);
 
 function showFirstPopup() {
