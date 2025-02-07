@@ -7,51 +7,45 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('hearts-background.png'); /* Add a hearts background */
+    background-image: url('images/hearts-background.png'); /* Path to your image */
     background-size: cover;
 }
 
 .popup {
-    display: none; /* Initially hidden */
-    position: fixed;
+    display: none; /* Hide all popups by default */
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
     border-radius: 10px;
-    text-align: center;
     width: 80%;
     max-width: 400px;
+    text-align: center;
 }
 
 .popup-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    color: #ff007f;
 }
 
-.popup-content p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-button {
+#askButton {
+    font-size: 20px;
     padding: 10px 20px;
-    font-size: 16px;
-    background-color: pink;
+    background-color: #ff007f;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 5px;
 }
 
-button:hover {
-    background-color: #ff66b2;
+#askButton:hover {
+    background-color: #ff69b4;
 }
 
 #game-container {
+    display: none; /* Hide the game area initially */
     text-align: center;
-    display: none; /* Initially hidden */
 }
 
 #scoreboard {
