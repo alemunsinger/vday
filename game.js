@@ -2,21 +2,21 @@
 document.getElementById("askButton").addEventListener("click", showFirstPopup);
 
 function showFirstPopup() {
-    document.getElementById("popup1").style.display = "block";
+    document.getElementById("popup1").style.display = "block"; // Show the first pop-up
 }
 
 function showSecondPopup() {
-    document.getElementById("popup1").style.display = "none";
-    document.getElementById("popup2").style.display = "block";
+    document.getElementById("popup1").style.display = "none"; // Hide the first pop-up
+    document.getElementById("popup2").style.display = "block"; // Show the second pop-up
 }
 
 function showFinalPopup() {
-    document.getElementById("popup2").style.display = "none";
-    document.getElementById("popup3").style.display = "block";
+    document.getElementById("popup2").style.display = "none"; // Hide the second pop-up
+    document.getElementById("popup3").style.display = "block"; // Show the final pop-up
 }
 
 function startGame() {
-    document.getElementById("popup3").style.display = "none";
+    document.getElementById("popup3").style.display = "none"; // Hide the final pop-up
     document.getElementById("game-container").style.display = "block";  // Show the game area
     startGameLogic(); // Call the game logic function to start the game
 }
