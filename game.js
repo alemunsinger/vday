@@ -1,3 +1,26 @@
+document.getElementById("askButton").addEventListener("click", showFirstPopup);
+
+function showFirstPopup() {
+    document.getElementById("main-content").style.display = "none";
+    document.getElementById("popup1").style.display = "flex";
+}
+
+function showSecondPopup() {
+    document.getElementById("popup1").style.display = "none";
+    document.getElementById("popup2").style.display = "flex";
+}
+
+function showFinalPopup() {
+    document.getElementById("popup2").style.display = "none";
+    document.getElementById("popup3").style.display = "flex";
+}
+
+function startGame() {
+    document.getElementById("popup3").style.display = "none";
+    document.getElementById("game-container").style.display = "block";  // Show the game area
+    startGameLogic(); // Call the game logic function to start the game
+}
+
 let canvas = document.getElementById('gameCanvas');
 let ctx = canvas.getContext('2d');
 
@@ -90,4 +113,6 @@ document.addEventListener('keyup', function (e) {
 });
 
 // Start the game
-updateGameArea();
+function startGameLogic() {
+    updateGameArea();
+}
