@@ -7,8 +7,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 
+/* Game container */
 #game-container {
     text-align: center;
 }
@@ -26,4 +28,51 @@ body {
 #gameCanvas {
     background-color: white;
     border: 2px solid #000;
+    margin-bottom: 20px;
 }
+
+/* Popups */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 80%;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff66b2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3385;
+}
+
+/* Make the main content look clean */
+#main-content {
+    text-align: center;
+}
+
+/* If you have a custom animation for hearts or the game elements, 
+   you can define them here. For now, it’s just the background styling. */
