@@ -7,12 +7,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('images/hearts-background.png'); /* Path to your image */
+    background-image: url('images/hearts-background.png'); /* Your background image path */
     background-size: cover;
 }
 
 .popup {
-    display: none; /* Hide all popups by default */
+    display: none; /* Hide all popups initially */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -44,7 +44,7 @@ body {
 }
 
 #game-container {
-    display: none; /* Hide the game area initially */
+    display: none; /* Hide the game initially */
     text-align: center;
 }
 
