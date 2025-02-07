@@ -7,12 +7,51 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
+    background-image: url('hearts-background.png'); /* Add a hearts background */
+    background-size: cover;
 }
 
-/* Game container */
+.popup {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+}
+
+.popup-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: pink;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #ff66b2;
+}
+
 #game-container {
     text-align: center;
+    display: none; /* Initially hidden */
 }
 
 #scoreboard {
@@ -21,58 +60,7 @@ body {
     margin-bottom: 20px;
 }
 
-#game-area {
-    position: relative;
-}
-
 #gameCanvas {
     background-color: white;
     border: 2px solid #000;
-    margin-bottom: 20px;
 }
-
-/* Popups */
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-}
-
-.popup-content {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 400px;
-    width: 80%;
-}
-
-button {
-    margin-top: 10px;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #ff66b2;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #ff3385;
-}
-
-/* Make the main content look clean */
-#main-content {
-    text-align: center;
-}
-
-/* If you have a custom animation for hearts or the game elements, 
-   you can define them here. For now, it’s just the background styling. */
